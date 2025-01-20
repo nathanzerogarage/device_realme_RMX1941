@@ -24,7 +24,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
-# Inherit some common xd stuff.
+# Inherit some common xd stuff
 $(call inherit-product, vendor/xdroid/config/common.mk)
 XDROID_BOOT_DARK := true
 XDROID_UI_BLUR := true
@@ -45,4 +45,13 @@ PRODUCT_MANUFACTURER := realme
 PRODUCT_RELEASE_NAME := Realme C2
 
 # Build FP
-BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RQ2A.210305.006/7119741:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.211001.001/7641976:user/release-keys"
+PRODUCT_GMS_CLIENTID_BASE := android-oppo
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    TARGET_DEVICE="RMX1941" \
+    PRODUCT_NAME="RMX1941" \
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.211001.001 7641976 release-keys"
+    
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
