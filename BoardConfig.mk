@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+ALLOW_MISSING_DEPENDENCIES=true
 DEVICE_PATH := device/realme/RMX1941
 
 # AVB
