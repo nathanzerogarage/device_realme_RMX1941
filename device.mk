@@ -103,6 +103,14 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 # NotchBarKiller 
 PRODUCT_PACKAGES += \
     NotchBarKiller
+    
+# Realme
+PRODUCT_PACKAGES += \
+    RealmeParts
+
+PRODUCT_PACKAGES += \
+    parts.rc \
+    perf_profile.sh
 
 # Lights
 PRODUCT_PACKAGES += \
