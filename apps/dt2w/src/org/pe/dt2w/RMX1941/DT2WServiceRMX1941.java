@@ -13,7 +13,7 @@ import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.provider.Settings.Secure;
 
-public class DT2WServiceBegonia extends Service {
+public class DT2WServiceRMX1941 extends Service {
     private static final String TAG = "DT2WServiceRMX1941";
     private Context mContext;
     private Handler mHandler;
